@@ -50,6 +50,11 @@ Start the app, connect a controller, launch the game. It appears in the
 game's controller list like any USB pad — Gopher64, other emulators,
 Steam titles, anything that speaks HID.
 
+If an SDL2 game detects the virtual Pro Controller 2 but scrambles its
+sticks or buttons, it may need an explicit controller mapping. See
+[the macOS SDL2 mapping and MapleStory Classic World setup](sdl/maplestory-macos.md)
+for a configuration tested with macOS 27 and SDL 2.30.12.
+
 Two things the virtual pad does not carry: rumble (generic HID gamepads
 have no standard rumble report on macOS) and motion. For those in an
 SDL-based program, launch it against the patched SDL build in

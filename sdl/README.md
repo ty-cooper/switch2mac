@@ -11,6 +11,20 @@ the app's UDP streams.
 | `libSDL3.0.dylib` | SDL 3.4.14 with our added **S2UDP joystick backend** — reads the menu-bar app's UDP controller streams and presents them as normal SDL gamepads, rumble included. Apple Silicon (arm64) only. |
 | `sdl3-3.4.14-s2udp.patch` | The complete source patch against SDL `release-3.4.14` (commit `147a8ee`), for provenance and for anyone who wants to rebuild or port it. |
 | `make-gopher64-both.sh` | Assembles **Gopher64-Both.app** from an installed Gopher64 + this dylib (details below). |
+| `gamecontrollerdb-macos.txt` | SDL2 mapping for the app's virtual Pro Controller 2 on macOS, including the non-adjacent right-stick axes. |
+| `maplestory-macos.md` | Tested mapping setup for MapleStory Classic World on macOS, with backup and undo instructions. |
+
+## Mapping the virtual gamepad in SDL2
+
+An SDL2 application can detect the app's standard virtual HID gamepad
+without knowing how to map its sticks, triggers, or buttons. The mapping
+in `gamecontrollerdb-macos.txt` describes that layout for the virtual
+Pro Controller 2; it does not use the S2UDP backend or patched dylib.
+
+See [the MapleStory Classic World guide](maplestory-macos.md) for the
+configuration verified on macOS 27 with SDL 2.30.12. Other SDL2 apps can
+load the mapping through SDL's normal controller-mapping API or their
+own mapping configuration.
 
 ## How it works
 

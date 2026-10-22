@@ -1,0 +1,4 @@
+# SDL2 mapping for the Finally the Controller Works v0.2.0 virtual HID
+# Pro Controller 2 on macOS. This is not a physical USB/Bluetooth pad mapping.
+# Tested with macOS 27 and SDL 2.30.12; see maplestory-macos.md.
+03003c347e0500006920000000000000,Finally Switch 2 Pro,a:b0,b:b1,x:b2,y:b3,back:b4,guide:b5,start:b6,leftstick:b7,rightstick:b8,leftshoulder:b9,rightshoulder:b10,leftx:a0,lefty:a1,rightx:a2,righty:a5,lefttrigger:a3,righttrigger:a4,dpup:h0.1,dpright:h0.2,dpdown:h0.4,dpleft:h0.8,platform:Mac OS X,
